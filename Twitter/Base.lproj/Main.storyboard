@@ -32,7 +32,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
+                                        <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
@@ -70,11 +70,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="140" id="YPs-tr-WD1" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tweetCell" rowHeight="160" id="YPs-tr-WD1" customClass="TweetCellTableViewCell" customModule="Twitter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YPs-tr-WD1" id="tIk-oq-7XI">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YKl-dy-wRA">
@@ -97,14 +97,15 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGZ-Ir-Bzw">
-                                            <rect key="frame" x="78" y="31" width="289" height="100.5"/>
+                                            <rect key="frame" x="78" y="31" width="289" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="HGZ-Ir-Bzw" secondAttribute="bottom" constant="8" id="1ft-nK-b6u"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HGZ-Ir-Bzw" secondAttribute="bottom" constant="8" id="1ft-nK-b6u"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YKl-dy-wRA" secondAttribute="bottom" constant="5" id="611-3R-TAr"/>
                                         <constraint firstItem="YKl-dy-wRA" firstAttribute="top" secondItem="tIk-oq-7XI" secondAttribute="top" constant="5" id="67C-PE-N7Y"/>
                                         <constraint firstItem="HGZ-Ir-Bzw" firstAttribute="top" secondItem="n02-ei-ef1" secondAttribute="bottom" constant="4" id="GsY-wU-igW"/>
                                         <constraint firstItem="YKl-dy-wRA" firstAttribute="leading" secondItem="tIk-oq-7XI" secondAttribute="leading" constant="5" id="Qys-RC-wGh"/>

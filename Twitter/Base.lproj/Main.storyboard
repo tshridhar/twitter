@@ -83,6 +83,12 @@
                                                 <constraint firstAttribute="width" constant="65" id="49J-bn-VV8"/>
                                                 <constraint firstAttribute="height" constant="65" id="d0g-dB-9WY"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n02-ei-ef1">
                                             <rect key="frame" x="78" y="5" width="50" height="22"/>
@@ -91,7 +97,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweet text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGZ-Ir-Bzw">
-                                            <rect key="frame" x="78" y="32" width="289" height="99.5"/>
+                                            <rect key="frame" x="78" y="31" width="289" height="100.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -100,7 +106,7 @@
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="HGZ-Ir-Bzw" secondAttribute="bottom" constant="8" id="1ft-nK-b6u"/>
                                         <constraint firstItem="YKl-dy-wRA" firstAttribute="top" secondItem="tIk-oq-7XI" secondAttribute="top" constant="5" id="67C-PE-N7Y"/>
-                                        <constraint firstItem="HGZ-Ir-Bzw" firstAttribute="top" secondItem="n02-ei-ef1" secondAttribute="bottom" constant="5" id="GsY-wU-igW"/>
+                                        <constraint firstItem="HGZ-Ir-Bzw" firstAttribute="top" secondItem="n02-ei-ef1" secondAttribute="bottom" constant="4" id="GsY-wU-igW"/>
                                         <constraint firstItem="YKl-dy-wRA" firstAttribute="leading" secondItem="tIk-oq-7XI" secondAttribute="leading" constant="5" id="Qys-RC-wGh"/>
                                         <constraint firstItem="n02-ei-ef1" firstAttribute="top" secondItem="tIk-oq-7XI" secondAttribute="top" constant="5" id="S5C-Ev-Te8"/>
                                         <constraint firstItem="n02-ei-ef1" firstAttribute="leading" secondItem="YKl-dy-wRA" secondAttribute="trailing" constant="8" id="VNa-hJ-6Ai"/>

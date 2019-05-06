@@ -40,6 +40,15 @@ class TweetCellTableViewCell: UITableViewCell {
         }
     }
     
+    @IBAction func retweet(_ sender: Any) {
+        TwitterAPICaller.client?.retweet(tweetID: tweetID, success: {
+            self.setRetweeted(true)
+        }, failure: { (error) in
+            print("Error is retweeting: \(error)")
+            
+        })
+    }
+    
     func setLiked(_ isLiked:Bool) {
         liked = isLiked
         if (liked) {
@@ -61,15 +70,7 @@ class TweetCellTableViewCell: UITableViewCell {
  
 
     
-    @IBAction func retweet(_ sender: Any) {
-        TwitterAPICaller.client?.retweet(tweetID: tweetID, success: {
-            self.setRetweeted(true)
-        }, failure: { (error) in
-            print("Error is retweeting: \(error)")
-            
-        })
-    }
-    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
